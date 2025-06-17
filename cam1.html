@@ -2,15 +2,16 @@
 <html>
 <body>
 
-<h2>Iframe - Target</h2>
+<h2>Redirect to a Webpage</h2>
+<p>The replace() method replaces the current document with a new one:</p>
 
-<iframe src="http://kylars:kylars@kampetorp.no-ip.org:85/image/jpeg.cgi" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+<button onclick="myFunction()">Replace document</button>
 
-<p><a href="http://kampetorp.no-ip.org:81/image/jpeg.cgi" target="iframe_a">Camera1</a></p>
-
-<p><a href="http://kampetorp.no-ip.org:85/image/jpeg.cgi" target="iframe_a">Camera2</a></p>
-
-<p></p>
+<script>
+function myFunction() {
+  location.replace("https://kampetorp.no-ip.org:85/video/mjpg.cgi")
+}
+</script>
 
 </body>
-</html>
+</html> 
