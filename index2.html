@@ -1,86 +1,12 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-
-<script type="text/javascript">
-function refresh(node)
-{
-   var times = 5000; // gap in Milli Seconds;
-
-   (function startRefresh()
-   {
-      var address;
-      if(node.src.indexOf('?')>-1)
-       address = node.src.split('?')[0];
-      else 
-       address = node.src;
-      node.src = address+"?time="+new Date().getTime();
-
-      setTimeout(startRefresh,times);
-   })();
-
-}
-
-window.onload = function()
-{
-  
-
-var node = document.getElementById('cam1');
-  refresh(node);
-  
-
-var node2 = document.getElementById('cam2');
-  refresh(node2);
-  
-
-var node3 = document.getElementById('cam3');
-  refresh(node3);
-  
-
-var node4 = document.getElementById('cam4');
-  refresh(node4);
-  
-
-var node5 = document.getElementById('cam33');
-  refresh(node5);
-  
-
-//var node6 = document.getElementById('cam6');
-//  refresh(node6);
-
-
-//var node7 = document.getElementById('cam7');
-//  refresh(node7);
-
-//var node8 = document.getElementById('cam8');
-//  refresh(node8);
-
-// you can refresh as many images you want just repeat above steps
-}
-
-</script>
-
+<title>index sidan</title>
 </head>
-
-
 <body>
-
-<center>
-<a href="cam1.html"><img src="cam1.html" height="240" width="320" id="cam1" /></a>
-
-<a href="cam2.html"><img src="http://stig.ddns.net:81/image/jpeg.cgi" height="240" width="320" id="cam2" /></a>
-
-<a href="cam3.html"><img src="http://stig.ddns.net:83/image/jpeg.cgi" height="240" width="320" id="cam3" /></a>
-
-<a href="cam33.html"><img src="http://stig.ddns.net:84/image/jpeg.cgi" height="240" width="320" id="cam33" /></a>
-
-<a href="cam4.html"><img src="http://stig.ddns.net:85/image/jpeg.cgi" height="240" width="320" id="cam4" /></a>
-
-<a href="cam5.html"><img src="http://admin:kylars@kylars.no-ip.org/image/jpeg.cgi" height="240" width="320" id="cam5" /></a>
-
-<a href="cam6.html"><img src="http://kylars:kylars@70.36.133.95/image/jpeg.cgi" height="240" width="320" id="cam6" /></a>
-</center>
+    <a href="http://kampetorp.no-ip.org:81/video/mjpg.cgi"><img src="https://dotorp.github.io/ipcam/camfrasse.png" height="240" width="320"/></a>
+    <a href="http://kampetorp.no-ip.org:85/video/mjpg.cgi"><img src="https://dotorp.github.io/ipcam/Camstig.png" height="240" width="320"/></a>
+    <a href="http://kampetorp.no-ip.org:86/video/mjpg.cgi"><img src="https://dotorp.github.io/ipcam/camfrans.png" height="240" width="320"/></a>
+    <a href="http://kampetorp.no-ip.org:86/video/mjpg.cgi"><img src="https://dotorp.github.io/ipcam/camfrans.png" height="240" width="320"/></a>
+   
 </body>
-
 </html>
