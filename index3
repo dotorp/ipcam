@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>HTML Frames</title>
+</head>
+<frameset cols="75%,25%">
+   <frame name="left" src="https://web3.isolarcloud.eu/#/login" />
+   <frame name="right" src="https://elen.nu/dagens-spotpris/se3-stockholm/" />
+   <noframes>
+      <body>
+         Your browser does not support frames.
+      </body>
+   </noframes>
+</frameset>
+</html>
